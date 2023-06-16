@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import { Home, Product } from './Components/Home';
+// import Aziz from './Components/Home';
+import bobo from './2.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <h1 className='mohamed'>Workshop React</h1>
+    <Home/>
+    <Product/>
+    <img src='/1.jpg' alt='Not FOund'/>
+    <img src={bobo} alt='Not Found'/>
+    {/* <Aziz/> */}
+    
+    <h2 style={{color:"green",textDecoration : 'underline'}}>Future of work.</h2>
+   
+    </>
+    
+  )
 }
 
 export default App;
